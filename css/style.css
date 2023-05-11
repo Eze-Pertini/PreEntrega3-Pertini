@@ -1,0 +1,753 @@
+/* Fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+@import url("https://kit.fontawesome.com/9ebc101723.js");
+/*Bases*/
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: none;
+  list-style: none;
+} /*MAIN*/
+/*-------------------------- SECCIONES INDEX MAIN PRINCIPAL - DESTACADAS ----------------------------*/
+#destacadas .col-lg-4 {
+  padding: 25px;
+}
+#destacadas .col-lg-4:hover {
+  scale: 1.1;
+  transition: all 1s ease-out;
+}
+#destacadas img {
+  width: 100%;
+  height: 250px;
+}
+#destacadas img:hover {
+  border: 5px solid #f7f7f7;
+}
+#destacadas h1 {
+  color: darkblue;
+  margin-bottom: 25px;
+  font-size: 40px;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+#destacadas h2 {
+  color: darkblue;
+  margin-bottom: 25px;
+  font-size: 20px;
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: center;
+  align-items: center;
+}
+#destacadas p {
+  color: darkblue;
+  margin-bottom: 25px;
+  font-size: 15px;
+  margin-left: 25px;
+  margin-top: 0px;
+}
+
+/*-------------------------- SECCIONES INDEX MAIN PRINCIPAL - PROMOS DEL MES ----------------------------*/
+#promociones-del-mes .col-lg-4 {
+  padding: 25px;
+}
+#promociones-del-mes .col-lg-4:hover {
+  scale: 1.1;
+  transition: all 1s ease-out;
+}
+#promociones-del-mes img {
+  width: 100%;
+  height: 350px;
+}
+#promociones-del-mes img:hover {
+  border: 5px solid #f7f7f7;
+}
+#promociones-del-mes h2 {
+  color: darkblue;
+  margin-bottom: 25px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#promociones-del-mes p {
+  color: darkblue;
+  margin-bottom: 25px;
+  font-size: 15px;
+  margin-left: 25px;
+  margin-top: 0px;
+}
+
+#promociones-del-mes .titulo-promociones {
+  color: darkblue;
+  margin-bottom: 25px;
+  font-size: 33px;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+/*-------------------------- PREGUNTAS FRECUENTES ----------------------------*/
+.col a:hover {
+  color: red;
+  transform: scale(2);
+  transition: all 1s;
+}
+
+/*LAYOUTS*/
+.content {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+  color: whitesmoke;
+}
+.content .brand {
+  text-align: center;
+  font-size: 3em;
+  color: darkblue;
+  font-weight: 300;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+.content .contact-wraper {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+.content .contact-wraper .contact-form {
+  background-color: #10028d;
+}
+.content .contact-wraper .contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+.content .contact-wraper .contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.content .contact-wraper .contact-form form .block {
+  grid-column: 1/3;
+}
+.content .contact-wraper > * {
+  padding: 1em;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  border-bottom: 1px solid aqua;
+  color: #fff;
+}
+
+.contact-form form button {
+  background: red;
+  border: 0;
+  text-transform: uppercase;
+  color: #000;
+  padding: 1em;
+}
+.contact-form form button:hover, .contact-form form button :focus {
+  background: lightcoral;
+  color: #fff;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+
+.contact-info {
+  background-color: #000083;
+}
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+.contact-info ul li {
+  padding: 0.3em;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+  text-align: center;
+  margin: 0 0 1em 0;
+}
+
+@media (min-width: 700px) {
+  .contact-wraper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact-wraper {
+    padding: 2em;
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+    padding: 1em;
+    text-align: left;
+  }
+}
+/*Header*/
+/* ------------------------------- NAVBAR PRINCIPAL ---------------------*/
+header .logo {
+  width: 100%;
+  height: 80px;
+  border-radius: 40%;
+}
+header .navbar .nav-link {
+  text-transform: uppercase;
+  transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  cursor: pointer;
+  user-select: none;
+}
+header .navbar .nav-link:hover {
+  color: darkblue;
+  background-color: lightblue;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ------------------------------- NAVBAR SECUNDARIA ---------------------*/
+.nav-link {
+  text-transform: uppercase;
+}
+
+/*Footer*/
+footer .logo {
+  width: 100%;
+  height: 100px;
+  border-radius: 40%;
+}
+footer .email {
+  font-size: 13px;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+footer .copy {
+  justify-content: center;
+  color: black;
+}
+footer .fa-brands .fa-facebook {
+  width: 150px;
+  height: 150px;
+}
+footer .col-lg-3 a:hover {
+  font-style: oblique;
+  color: blue;
+  border-radius: 4px;
+  background-color: grey;
+}
+footer .col-lg-4 a:hover {
+  scale: 1.2;
+}
+
+/*Galerias de imagenes*/
+/*-------------------------- INICIO GRILLA IMAGENES CURVE SASS ----------------------------*/
+.titulo-modelo {
+  color: darkblue;
+  margin-bottom: 25px;
+  font-size: 40px;
+  font-weight: 300;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.grid-curve-container {
+  display: grid;
+  grid-template-rows: repeat(2, 300px);
+  grid-template-columns: repeat(2, 300px);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+.grid-curve-container .grid-item {
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: center;
+  align-items: center;
+}
+.grid-curve-container .grid-item uno {
+  grid-area: 1/1/2/2;
+}
+.grid-curve-container .grid-item dos {
+  grid-area: 1/2/2/3;
+}
+.grid-curve-container .grid-item tres {
+  grid-area: 2/1/3/2;
+}
+.grid-curve-container .grid-item cuatro {
+  grid-area: 2/2/3/3;
+}
+.grid-curve-container .grid-item .img-grid {
+  width: 100%;
+  height: 300px;
+  border-right: 1px darkblue dashed;
+  border-bottom: 1px dashed darkblue;
+}
+.grid-curve-container .cuatro {
+  width: 100%;
+  border-right: 1px darkblue dashed;
+  border-bottom: 1px dashed darkblue;
+}
+.grid-curve-container .cuatro .caracteristicas {
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: center;
+  align-items: center;
+}
+.grid-curve-container .cuatro .caracteristicas ul {
+  list-style-type: upper-roman;
+  list-style-position: inside;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.grid-curve-container .cuatro .caracteristicas ul li {
+  color: black;
+  font-size: small;
+  text-align: left;
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: left;
+  align-items: left;
+  line-height: 1.5;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.grid-curve-container .cuatro .caracteristicas ul .medidas {
+  text-decoration: underline;
+  text-align: left;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .grid-curve-container {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    padding: 35px 0px;
+  }
+}
+@media (max-width: 858px) {
+  .navbar-secundaria {
+    display: none;
+  }
+}
+/*--------------------------pileta cocina -GALERIA IMAGENES bootstrap SASS----------------------------*/
+#pileta-cocina .col-lg-4 {
+  padding: 25px;
+}
+#pileta-cocina img {
+  width: 100%;
+  height: 250px;
+}
+#pileta-cocina img:hover {
+  border: 5px solid #f7f7f7;
+}
+#pileta-cocina h1 {
+  color: darkblue;
+  margin-bottom: 25px;
+  font-size: 40px;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+#pileta-cocina h3 {
+  color: darkblue;
+  margin-bottom: 25px;
+  font-size: 20px;
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*--------------------------SECCIONES PILETAS SIMPLES SASS----------------------------*/
+.p-simples {
+  width: 100%;
+  background-color: white;
+}
+.p-simples .grupo1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 50px 0px;
+}
+.p-simples h1 {
+  color: darkblue;
+  font-weight: 300;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  margin-bottom: 25px;
+  font-size: 40px;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+.p-simples p {
+  color: darkblue;
+  margin-bottom: 25px;
+  font-size: 15px;
+  margin-left: 25px;
+  margin-top: 0px;
+}
+.p-simples .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: center;
+  align-items: center;
+}
+.p-simples .box figure img {
+  width: 250px;
+}
+.p-simples .box figure img:hover {
+  border: 5px solid #f7f7f7;
+}
+.p-simples .box h2 {
+  color: darkblue;
+  margin-bottom: 25px;
+  font-size: 20px;
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: center;
+  align-items: center;
+}
+.p-simples .box p {
+  color: darkblue;
+  margin-bottom: 10px;
+}
+
+/* HACER RESPONSIVE SECCION DESTACADAS */
+@media screen and (max-width: 800px) {
+  .p-simples .grupo1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+/*--------------------------SECCIONES PILETAS DOBLES SASS----------------------------*/
+#p-dobles .col-lg-4 {
+  padding: 25px;
+}
+#p-dobles img {
+  width: 100%;
+  height: 250px;
+}
+#p-dobles img:hover {
+  border: 5px solid #f7f7f7;
+}
+#p-dobles h1 {
+  color: darkblue;
+  font-weight: 300;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  margin-bottom: 25px;
+  font-size: 40px;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+#p-dobles h2 {
+  color: darkblue;
+  margin-bottom: 25px;
+  font-size: 20px;
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*--------------------------SECCIONES VANITORYS SASS ----------------------------*/
+#vanitorys .col-lg-4 {
+  padding: 25px;
+}
+#vanitorys img {
+  width: 100%;
+  height: 400px;
+  border-radius: 20%;
+  border: solid 1px cadetblue;
+}
+#vanitorys img:hover {
+  border: 5px solid #f7f7f7;
+}
+#vanitorys h1 {
+  color: darkblue;
+  font-weight: 300;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  margin-bottom: 25px;
+  font-size: 40px;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+#vanitorys p {
+  color: darkblue;
+  margin-bottom: 25px;
+  font-size: 20px;
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: center;
+  align-items: center;
+}
+#vanitorys .div-texto h4 {
+  color: #000;
+  text-decoration: none;
+  font-weight: 200;
+  font-size: medium;
+  font-style: oblique;
+  margin-bottom: 0;
+}
+#vanitorys .div-texto span {
+  color: #f08080;
+  text-decoration: none;
+  font-weight: 200;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/*-------------------------- GALERIA GRIFERIAS bootstrap ----------------------------*/
+#galeria-griferias .col-lg-3 {
+  padding: 15px;
+}
+#galeria-griferias img {
+  width: 350px;
+  height: 300px;
+  border-radius: 30%;
+  border: solid 1px cadetblue;
+}
+#galeria-griferias img:hover {
+  border: 5px solid #f7f7f7;
+}
+#galeria-griferias h1 {
+  color: darkblue;
+  margin-bottom: 25px;
+  font-size: 40px;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+#galeria-griferias h3 {
+  color: darkblue;
+  margin-bottom: 25px;
+  font-size: 20px;
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: center;
+  align-items: center;
+}
+#galeria-griferias .div-texto h4 {
+  color: #000;
+  text-decoration: none;
+  font-size: medium;
+  font-weight: 200;
+  font-style: oblique;
+  margin-bottom: 0;
+}
+#galeria-griferias .div-texto span {
+  color: #f08080;
+  text-decoration: none;
+  font-weight: 200;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/*-------------------------- MINI LUXOR - GALERIA IMAGENES----------------------------*/
+#mini-luxor img {
+  width: 355px;
+  height: 300px;
+}
+
+/*-------------------------- MODELO-R63 - GALERIA IMAGENES----------------------------*/
+#galeria-r63 img {
+  width: 100%;
+  height: 350px;
+}
+
+/*-------------------------- QUADRA Q55 - GALERIA IMAGENES ----------------------------*/
+#quadra-q55 img {
+  width: 400px;
+  height: 300px;
+}
+
+/*-------------------------- GALERIA IMAGENES GRIFERIA GOURMET----------------------------*/
+#griferia-gourmet .col-lg-4 {
+  padding: 25px;
+}
+#griferia-gourmet img {
+  width: 250px;
+  height: 525px;
+  border-radius: 20%;
+  border: solid 1px cadetblue;
+}
+#griferia-gourmet img:hover {
+  border: 5px solid #f7f7f7;
+}
+#griferia-gourmet h1 {
+  color: darkblue;
+  font-weight: 300;
+  margin-bottom: 25px;
+  font-size: 40px;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+#griferia-gourmet p {
+  color: darkblue;
+  margin-bottom: 25px;
+  font-size: 20px;
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: center;
+  align-items: center;
+}
+#griferia-gourmet .div-texto h4 {
+  color: #000;
+  text-decoration: none;
+  font-weight: 200;
+  font-size: medium;
+  font-style: oblique;
+  margin-bottom: 0;
+}
+#griferia-gourmet .div-texto span {
+  color: #f08080;
+  text-decoration: none;
+  font-weight: 200;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/*-------------------------- Galeria QUADRA Q76-a----------------------------*/
+.galeria-q76 {
+  display: grid;
+  grid-template-rows: repeat(3, 300px);
+  grid-template-columns: repeat(auto);
+  justify-content: center;
+  align-items: center;
+}
+.galeria-q76 img {
+  padding: 5px;
+  width: 350px;
+  height: 300px;
+  border-radius: 40px;
+}
+
+.descripcion p {
+  padding: 5px;
+}
+
+@media screen and (min-width: 500px) {
+  .galeria-q76 {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+    padding: 10px;
+  }
+  .galeria-q76 img {
+    padding: 5px;
+    width: 350px;
+    height: 300px;
+    border-radius: 40px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .galeria-q76 {
+    display: flex;
+    flex-flow: row, wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  .galeria-q76 img {
+    width: 20%;
+    height: 300px;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .galeria-q76 .q76-muestra, .galeria-q76 .q76-accesorios {
+    position: relative;
+  }
+  .galeria-q76 .q76-muestra {
+    left: 40px;
+  }
+  .galeria-q76 .q76-muestra:hover {
+    transform: translateX(-100px);
+    transition: all 1s;
+  }
+  .galeria-q76 .q76-accesorios {
+    right: 40px;
+  }
+  .galeria-q76 .q76-accesorios:hover {
+    transform: translateX(100px);
+    transition: all 1s ease-out;
+  }
+  .galeria-q76 .q76-colocada:hover {
+    z-index: 2;
+    transform: translateZ(40px);
+    scale: 1.1;
+    transition: all 1s;
+  }
+}
+/*-------------------------- Galeria ACCESORIOS----------------------------*/
+#accesorios .col-lg-4 {
+  padding: 25px;
+}
+#accesorios img {
+  width: 100%;
+  height: 250px;
+  border-radius: 40px;
+}
+#accesorios img:hover {
+  border: 5px solid #f7f7f7;
+  filter: brightness(120%);
+}
+#accesorios h1 {
+  color: darkblue;
+  font-weight: 300;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  margin-bottom: 25px;
+  font-size: 40px;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+#accesorios h2 {
+  color: darkblue;
+  margin-bottom: 25px;
+  font-size: 20px;
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

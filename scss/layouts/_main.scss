@@ -1,0 +1,97 @@
+@import "../base/variables";
+
+/*-------------------------- SECCIONES INDEX MAIN PRINCIPAL - DESTACADAS ----------------------------*/
+
+#destacadas{
+    .col-lg-4{
+        padding: 25px;
+        &:hover{
+            scale: 1.1;
+            transition: all 1s ease-out;
+        }
+    }
+    img{
+        width: 100%;
+        height: 250px;
+        &:hover{
+            border: 5px solid #f7f7f7;
+        }
+    }
+    h1{
+        color: darkblue;
+        margin-bottom: 25px;
+        font-size: 40px;
+        margin-left: 25px;
+        margin-top: 25px;
+        margin-bottom: 0;
+        text-decoration: underline;
+    }
+    h2{
+        color: darkblue;
+        margin-bottom: 25px;
+        font-size: 20px;
+        @include flexible(flex, row, wrap, center, center);
+    }
+    p{
+        color: darkblue;
+        margin-bottom: 25px;
+        font-size: 15px;
+        margin-left: 25px;
+        margin-top: 0px;
+    }
+}
+
+/*-------------------------- SECCIONES INDEX MAIN PRINCIPAL - PROMOS DEL MES ----------------------------*/
+
+
+#promociones-del-mes{
+    .col-lg-4{
+        padding: 25px;
+        &:hover{
+            scale: 1.1;
+            transition: all 1s ease-out;
+        }
+    }
+    img{
+        width: 100%;
+        height: 350px;
+        &:hover{
+            border: 5px solid #f7f7f7;
+        }
+    }
+    h2{
+        color: darkblue;
+        margin-bottom: 25px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    p{
+        color: darkblue;
+        margin-bottom: 25px;
+        font-size: 15px;
+        margin-left: 25px;
+        margin-top: 0px;
+    }
+}
+
+#promociones-del-mes .titulo-promociones{
+        color: darkblue;
+        margin-bottom: 25px;
+        font-size: 33px;
+        margin-left: 25px;
+        margin-top: 25px;
+        margin-bottom: 0;
+        text-decoration: none;
+}
+
+
+/*-------------------------- PREGUNTAS FRECUENTES ----------------------------*/
+.col{
+    a:hover{
+        color:red;
+        transform: scale(2);
+        transition: all 1s;
+    }
+}

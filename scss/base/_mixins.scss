@@ -1,0 +1,12 @@
+@mixin grilla($grid, $filas, $columnas) {
+    display: $grid;
+    grid-template-rows: $filas;
+    grid-template-columns: $columnas;
+}
+
+@mixin flexible($display, $direction, $corte, $just, $aligne) {
+    display: $display;
+    flex-flow: $direction, $corte;
+    justify-content: $just;
+    align-items: $aligne;
+}

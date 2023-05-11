@@ -1,0 +1,37 @@
+@import "../base/variables";
+@import "../base/listas";
+
+/* ------------------------------- NAVBAR PRINCIPAL ---------------------*/
+
+header{
+	.logo {
+		width: 100%;
+		height: 80px;
+		border-radius: 40%;
+	}
+	
+	.navbar {
+		.nav-link {
+			text-transform: uppercase;
+			transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+			cursor: pointer;
+			user-select: none;
+	
+			&:hover {
+				color: darkblue;
+				background-color: lightblue;
+				box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+				border-radius: 4px;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+
+/* ------------------------------- NAVBAR SECUNDARIA ---------------------*/
+.nav-link{
+	text-transform: uppercase;
+}
+
+
